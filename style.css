@@ -38,7 +38,7 @@ nav {
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
 }
 
 nav a {
@@ -57,8 +57,8 @@ nav a:hover {
 
 .hero {
   background:
-    linear-gradient(rgba(8, 15, 35, 0.72), rgba(8, 15, 35, 0.72)),
-    linear-gradient(135deg, #0b1220 0%, #123a8f 45%, #1aa0d8 100%);
+    linear-gradient(rgba(8, 15, 35, 0.66), rgba(8, 15, 35, 0.66)),
+    url("images/hero-bg.jpg") center center / cover no-repeat;
   color: white;
   padding: 88px 20px 78px;
 }
@@ -175,7 +175,7 @@ nav a:hover {
 .section-intro {
   max-width: 760px;
   color: #475569;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 
 .platforms {
@@ -184,7 +184,7 @@ nav a:hover {
 
 .logo-row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
   margin-top: 30px;
 }
@@ -193,10 +193,21 @@ nav a:hover {
   background: white;
   border: 1px solid #e5e7eb;
   border-radius: 14px;
-  padding: 18px 14px;
-  font-weight: 700;
-  color: #334155;
+  min-height: 86px;
+  padding: 16px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+}
+
+.logo-item img {
+  max-width: 100%;
+  max-height: 42px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .cards {
@@ -323,9 +334,12 @@ ul.clean-list li {
 @media (max-width: 1024px) {
   .hero-grid,
   .six-grid,
-  .stats-grid,
-  .logo-row {
+  .stats-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo-row {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .hero-panel {
@@ -348,9 +362,12 @@ ul.clean-list li {
 
   .hero-grid,
   .six-grid,
-  .stats-grid,
-  .logo-row {
+  .stats-grid {
     grid-template-columns: 1fr;
+  }
+
+  .logo-row {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .lang-switch {
