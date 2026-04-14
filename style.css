@@ -384,3 +384,23 @@ ul.clean-list li {
     padding: 24px;
   }
 }
+
+.erp-menu {
+  display: inline-flex;
+  align-items: center;
+}
+
+.erp-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.erp-trigger:hover {
+  color: #ffffff;
+}
